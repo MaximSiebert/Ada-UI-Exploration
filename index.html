@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI Experiments</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xev2fqi.css">
+</head>
+<style>
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #454B57;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #454B57;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: #454B57;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: #454B57;
+    }
+    body.sans-serif {
+        color:#000028;
+        font-family: "aktiv-grotesk";
+    }
+    .black {
+        color:#000028;
+    }
+    button, .link, .link:hover, .link:focus, .link:active, .link:link {
+        transition: ease-in-out .1s background;
+    }
+    .bg-blue {
+        background: #0050C7;
+    }
+    button.bg-blue:hover {
+        background: #0B3691;
+    }
+    button.bg-transparent:hover {
+        background: #f5f5f5;
+    }
+    .blue {
+        color: #0050C7;
+    }
+    .bg-lightest-blue {
+        background: rgba(126,177,247,.2);
+    }
+    .b--black {
+        border-color: rgba(0,0,40,.1);
+    }
+    .b--light-gray {
+        border-color: #ddd;
+        transition: ease-in-out .1s border-color;
+    }
+    .b--light-blue {
+        border-color: rgba(0,80,199,.2);
+        transition: ease-in-out .1s border-color;
+    }
+    .b--light-blue:hover {
+        border-color: #0050C7;
+    }
+    button.b--light-gray:hover {
+        border-color: #454B57;
+    }
+    .near-white {
+        background: #f5f5f5;
+    }
+    .hover-bg-near-white:hover {
+        background: #f5f5f5;
+    }
+    .moon-gray {
+        color: #454B57;
+    }
+    button:active {
+        transform: scale(.98, .98);
+    }
+    button:focus {
+        outline: none;
+    }
+    button:focus:not(:active) {
+        box-shadow: 0 0 0 4px rgba(249,208,176,1);
+    }
+    input:focus {
+        outline: none;
+        border-color: #454B57;
+    }
+    .pv2 {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+    .ph2 {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+    .ph4 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .h-35 {
+        height: 36px;
+    }
+    .h-30 {
+        height: 34px;
+    }
+    .link:hover {
+        background: rgba(126,177,247,.4);
+    }
+    .form-button-radius {
+        border-radius: 0 .4rem .4rem 0;
+    }
+    .br3 {
+        border-radius: .4rem;
+    }
+    input.br3 {
+        border-radius: .45rem;
+    }
+    .text-shadow {
+        text-shadow: 0 0 2px rgba(0,0,40,.6);
+    }
+    .box-shadow {
+        box-shadow: 0 1px 2px 0 rgba(31, 34, 36, 0.04);
+    }
+</style>
+<body class="sans-serif fw4">
+    <div class="w-80 mw7 center pv6">
+        <h1 class="f-subheadline mt0">UI Style Options</h1>
+        <hr>
+        <h2 class="f1 mb4">Option #1</h2>
+        <p class="lh-copy f4 moon-gray mb4">Lorem ipsum dolor, sit amet 
+            <a class="link blue" href="">consectetur</a>
+            adipisicing elit. Reiciendis voluptas voluptatum maiores, quis fugiat nam?</p>
+        <button class="input-reset button-reset ba pv2 ph4 pointer bg-blue white br2 b--black">Get started</button>
+        <button class="ml1 input-reset button-reset ba pv2 ph4 pointer blue br2 b--light-gray">Learn more</button>
+        <div class="relative mt2 w-60">
+            <input class="db pv2 ph2 input-reset ba b--light-gray br2 sans-serif black w-100" type="text" placeholder="Enter your email address">
+            <button class="ml1 absolute right-0 top-0 input-reset button-reset b1 bg-transparent ma1 pv0 h-35 ph3 pointer blue br2 b--transparent">Sign up</button>
+        </div>
+        <hr class="mt5">
+        <h2 class="f1 mb4">Option #2</h2>
+        <p class="lh-copy f4 moon-gray mb4">Lorem ipsum dolor, sit amet
+            <a class="link blue" href="">consectetur</a>
+            adipisicing elit. Reiciendis voluptas voluptatum maiores, quis fugiat nam?</p>
+        <button class="text-shadow f6 fw5 input-reset button-reset ba pv2 ph4 pointer bg-blue white br2 b--black">Get started</button>
+        <button class="f6 fw5 ml1 input-reset button-reset ba pv2 ph4 pointer blue br2 b--transparent hover-bg-near-white">Learn more</button>
+        <div class="relative mt2 w-60">
+            <input class="f6 db pv2 ph2 input-reset ba b--light-gray br2 sans-serif black w-100" type="text" placeholder="Enter your email address">
+            <button class="text-shadow f6 fw5 ml1 absolute right-0 top-0 input-reset button-reset b1 bg-blue ma1 pv0 h-30 ph3 pointer white br2 b--transparent">Sign up</button>
+        </div>
+        <hr class="mt5">
+        <h2 class="f1 mb4">Option #3</h2>
+        <p class="lh-copy f4 moon-gray mb4">Lorem ipsum dolor, sit amet
+            <a class="link blue" href="">consectetur</a>
+            adipisicing elit. Reiciendis voluptas voluptatum maiores, quis fugiat nam?</p>
+        <button class="fw5 text-shadow input-reset button-reset ba pv2 ph4 pointer bg-blue white br3 b--black">Get started</button>
+        <button class="fw5 ml1 input-reset button-reset ba pv2 ph4 pointer black bg-light-gray br3 b--light-gray">Learn more</button>
+        <div class="relative mt2 w-60">
+            <input class="db pv2 ph2 input-reset ba b--light-gray br3 sans-serif black w-100" type="text" placeholder="Enter your email address">
+            <button class="fw5 ml1 absolute right-0 top-0 input-reset button-reset b1 bg-light-gray pv0 h-100 ph3 pointer black br2 form-button-radius b--light-gray">Sign up</button>
+        </div>
+        <hr class="mt5">
+        <h2 class="f1 mb4">Option #4</h2>
+        <p class="lh-copy f4 moon-gray mb4">Lorem ipsum dolor, sit amet
+            <a class="link blue" href="">consectetur</a>
+            adipisicing elit. Reiciendis voluptas voluptatum maiores, quis fugiat nam?</p>
+        <button class="fw5 box-shadow text-shadow input-reset button-reset ba pv2 ph4 pointer bg-blue white br3 b--black">Get started</button>
+        <button class="fw5 box-shadow ml1 input-reset button-reset ba pv2 ph4 pointer blue bg-lightest-blue br3 b--light-blue">Learn more</button>
+        <div class="relative mt2 w-60 box-shadow">
+            <input class="db pv2 ph2 input-reset ba b--light-gray br3 sans-serif black w-100" type="text" placeholder="Enter your email address">
+            <button class="fw5 ml1 absolute right-0 top-0 input-reset button-reset b1 bg-lightest-blue pv0 h-35 ma1 ph3 pointer blue br2 b--light-blue">Sign up</button>
+        </div>
+    </div>
+</body>
+</html>
