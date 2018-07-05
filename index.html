@@ -80,13 +80,18 @@
     }
     button:focus {
         outline: none;
+        /* box-shadow: 0 0 0 4px rgba(249,208,176,1); */
     }
     button:focus:not(:active) {
         box-shadow: 0 0 0 4px rgba(249,208,176,1);
     }
     input:focus {
         outline: none;
-        border-color: #454B57;
+        border-color: #0050C7;
+    }
+    input.focus-black:focus {
+        outline: none;
+        border-color: #000028;
     }
     .pv2 {
         padding-top: .75rem;
@@ -158,7 +163,7 @@
         <button class="fw5 text-shadow input-reset button-reset ba pv2 ph4 pointer bg-blue white br3 b--black">Get started</button>
         <button class="fw5 ml1 input-reset button-reset ba pv2 ph4 pointer black bg-light-gray br3 b--light-gray">Learn more</button>
         <div class="relative mt2 w-60">
-            <input class="db pv2 ph2 input-reset ba b--light-gray br3 sans-serif black w-100" type="text" placeholder="Enter your email address">
+            <input class="focus-black db pv2 ph2 input-reset ba b--light-gray br3 sans-serif black w-100" type="text" placeholder="Enter your email address">
             <button class="fw5 ml1 absolute right-0 top-0 input-reset button-reset b1 bg-light-gray pv0 h-100 ph3 pointer black br2 form-button-radius b--light-gray">Sign up</button>
         </div>
         <hr class="mt5">
