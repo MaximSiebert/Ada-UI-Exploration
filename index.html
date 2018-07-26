@@ -42,6 +42,11 @@
     button, .link, .link:hover, .link:focus, .link:active, .link:link {
         transition: ease-in-out .1s all;
     }
+    .link:focus {
+        box-shadow:  0 0 0 2px rgba(255,255,255,1), 0 0 0 5px rgba(249,208,176,1);
+        outline: none;
+        border-radius: .5rem;
+    }
     .bg-blue {
         background: #0050C7;
     }
@@ -89,7 +94,10 @@
         /* box-shadow: 0 0 0 4px rgba(249,208,176,1); */
     }
     button:focus:not(:active) {
-        box-shadow: 0 0 0 2px rgba(255,255,255,1), 0 0 0 5px rgba(249,208,176,1);
+        box-shadow: 0 0 0 2px rgba(255,255,255,1), 0 0 0 5px rgba(249,208,176,1), inset .75px .75px 0px 0 rgba(255, 255, 255, .2);
+    }
+    button.bg-black:focus:not(:active) {
+        box-shadow: 0 0 0 2px rgba(255,255,255,1), 0 0 0 5px rgba(249,208,176,1), inset .75px .75px 0px 0 rgba(255, 255, 255, .3);
     }
     input:focus {
         outline: none;
@@ -134,6 +142,15 @@
         text-shadow: 0 0 2px rgba(0,0,40,.6);
     }
     .box-shadow {
+        box-shadow: 0 1px 2px 0 rgba(31, 34, 36, 0.04), inset .75px .75px 0px 0 rgba(255, 255, 255, .2);
+    }
+    .box-shadow:active {
+        box-shadow: 0 1px 2px 0 rgba(31, 34, 36, 0.04);
+    }
+    .box-shadow.bg-black {
+        box-shadow: 0 1px 2px 0 rgba(31, 34, 36, 0.04), inset .75px .75px 0px 0 rgba(255, 255, 255, .3);
+    }
+    .box-shadow.bg-black:active {
         box-shadow: 0 1px 2px 0 rgba(31, 34, 36, 0.04);
     }
     .underline-hover-link {
@@ -196,10 +213,10 @@
             <a class="link blue underline-hover-link" href="">consegtetur</a>
             adipisicing elit. Reiciendis voluptas voluptatum maiores, quis fugiat nam?</p>
         <button class="fw5 box-shadow text-shadow input-reset button-reset ba pv2 ph4 pointer bg-blue white br3 b--black">Get started</button>
-        <button class="fw5 box-shadow ml1 input-reset button-reset ba pv2 ph4 pointer blue bg-lightest-blue br3 b--light-blue">Learn more</button>
+        <button class="fw5 box-shadow text-shadow ml1 input-reset button-reset ba pv2 ph4 pointer white bg-black br3 b--black">Learn more</button>
         <div class="relative mt2 w-60 box-shadow">
             <input class="db pv2 ph2 input-reset ba b--light-gray br3 sans-serif black w-100" type="text" placeholder="Enter your email address">
-            <button class="fw5 ml1 absolute right-0 top-0 input-reset button-reset b1 bg-lightest-blue pv0 h-35 ma1 ph3 pointer blue br3 b--light-blue input-button-radius">Sign up</button>
+            <button class="fw5 box-shadow text-shadow ml1 absolute right-0 top-0 input-reset button-reset b1 bg-black pv0 h-35 ma1 ph3 pointer white br3 b--black input-button-radius">Sign up</button>
         </div>
     </div>
 </body>
